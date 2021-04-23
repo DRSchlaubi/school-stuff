@@ -53,6 +53,15 @@ public abstract class GraphicObject {
      */
     public abstract double calculateArea();
     
+    /**
+     * This methods calculates the size of one pixel in mm for 300 dpi.
+     * @param pixel the amount of pixels
+     * @return the amound of millimeters
+     */
+    public static double pixelToMm(int pixel) {
+        return ((double) pixel) * 8.5;
+    }
+    
     @Override
     public abstract String toString();
 
