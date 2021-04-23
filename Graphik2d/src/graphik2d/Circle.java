@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class Circle extends GraphicObject {
     
-    private final int radius;
+    private int radius;
 
     public Circle(int x0, int y0, Color color, int radius) {
         super(x0, y0, color);
@@ -40,6 +40,10 @@ public class Circle extends GraphicObject {
 
     public int getRadius() {
         return radius;
+    }
+    
+    public void setRadius(int radius) {
+        this.radius = radius;
     }
     
     @Override

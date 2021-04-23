@@ -16,8 +16,8 @@ import java.util.List;
  */
 public class Rectangle extends GraphicObject {
 
-    private final int width;
-    private final int height;
+    private int width;
+    private int height;
     
     public Rectangle(int x0, int y0, Color color, int width, int height) {
         super(x0, y0, color);
@@ -52,8 +52,17 @@ public class Rectangle extends GraphicObject {
         return width;
     }
 
+    
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    
     public int getHeight() {
         return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
     
     @Override
