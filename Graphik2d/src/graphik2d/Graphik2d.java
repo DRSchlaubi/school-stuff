@@ -38,6 +38,7 @@ public class Graphik2d {
         System.out.println("Circle " + counter + " radius: " + circle.getRadius());
         System.out.println("Circle " + counter + " area: " + circle.calculateArea());
         System.out.println("Circle " + counter + " scope: " + circle.calculateScope());
+        System.out.println("DPI thing: " + GraphicObject.pixelToMm(circle.getRadius()) + "mm");
     }
     
     private static void printRectangle(Rectangle rectangle, int counter) {   
